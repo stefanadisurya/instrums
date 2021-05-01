@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="stepCell" rowHeight="190" id="KGk-i7-Jjw" customClass="StepCell" customModule="Instrums" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="190"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="190"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Tap to hear the instrument sound" translatesAutoresizingMaskIntoConstraints="NO" id="dnp-oK-hAt">
+                        <rect key="frame" x="16" y="44" width="288" height="131"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2k-Hq-Eto">
+                        <rect key="frame" x="16" y="16" width="288" height="24"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dnp-oK-hAt" firstAttribute="top" secondItem="D2k-Hq-Eto" secondAttribute="bottom" constant="4" id="7zH-0F-kaB"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="dnp-oK-hAt" secondAttribute="bottom" constant="4" id="SLF-If-mUw"/>
+                    <constraint firstItem="D2k-Hq-Eto" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="UPl-ZJ-qrx"/>
+                    <constraint firstItem="dnp-oK-hAt" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="dDM-un-D2y"/>
+                    <constraint firstItem="dnp-oK-hAt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="x6d-eR-5UF"/>
+                    <constraint firstItem="D2k-Hq-Eto" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="xyk-h2-wbs"/>
+                    <constraint firstAttribute="trailing" secondItem="D2k-Hq-Eto" secondAttribute="trailing" constant="16" id="zeB-hF-e6n"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="stepImage" destination="dnp-oK-hAt" id="3jN-y0-lya"/>
+                <outlet property="stepLabel" destination="D2k-Hq-Eto" id="Qdi-eu-QoI"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="179.46428571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Tap to hear the instrument sound" width="344" height="121"/>
+    </resources>
+</document>

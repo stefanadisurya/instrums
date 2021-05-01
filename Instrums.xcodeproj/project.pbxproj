@@ -32,6 +32,14 @@
 		F34A62AD263AB4AE00ED7486 /* HowToPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A62AC263AB4AE00ED7486 /* HowToPlayViewController.swift */; };
 		F390E918263951A3002659B8 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F390E917263951A3002659B8 /* Colors.swift */; };
 		F390E91A26395BED002659B8 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F390E91926395BED002659B8 /* QuizViewController.swift */; };
+		F3B26A64263CEEDA003EC362 /* StepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B26A62263CEEDA003EC362 /* StepCell.swift */; };
+		F3B26A65263CEEDA003EC362 /* StepCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3B26A63263CEEDA003EC362 /* StepCell.xib */; };
+		F3B26A68263D04F2003EC362 /* Instrums.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F3B26A66263D04F1003EC362 /* Instrums.xcdatamodeld */; };
+		F3B26A6D263D0761003EC362 /* Instruments+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B26A69263D0761003EC362 /* Instruments+CoreDataClass.swift */; };
+		F3B26A6E263D0761003EC362 /* Instruments+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B26A6A263D0761003EC362 /* Instruments+CoreDataProperties.swift */; };
+		F3B26A6F263D0761003EC362 /* Steps+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B26A6B263D0761003EC362 /* Steps+CoreDataClass.swift */; };
+		F3B26A70263D0761003EC362 /* Steps+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B26A6C263D0761003EC362 /* Steps+CoreDataProperties.swift */; };
+		F3B26A74263D0E0B003EC362 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B26A73263D0E0B003EC362 /* Repository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +70,14 @@
 		F34A62AC263AB4AE00ED7486 /* HowToPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayViewController.swift; sourceTree = "<group>"; };
 		F390E917263951A3002659B8 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		F390E91926395BED002659B8 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		F3B26A62263CEEDA003EC362 /* StepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCell.swift; sourceTree = "<group>"; };
+		F3B26A63263CEEDA003EC362 /* StepCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StepCell.xib; sourceTree = "<group>"; };
+		F3B26A67263D04F2003EC362 /* Instrums.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Instrums.xcdatamodel; sourceTree = "<group>"; };
+		F3B26A69263D0761003EC362 /* Instruments+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Instruments+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F3B26A6A263D0761003EC362 /* Instruments+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Instruments+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F3B26A6B263D0761003EC362 /* Steps+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Steps+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F3B26A6C263D0761003EC362 /* Steps+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Steps+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F3B26A73263D0E0B003EC362 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +110,7 @@
 		F318E37D26382A8300202F47 /* Instrums */ = {
 			isa = PBXGroup;
 			children = (
+				F3B26A61263CEEBC003EC362 /* Custom */,
 				F390E914263950A4002659B8 /* Model */,
 				F390E915263950B0002659B8 /* View */,
 				F390E916263950BB002659B8 /* Controller */,
@@ -103,7 +120,7 @@
 				F318E38726382A8400202F47 /* Assets.xcassets */,
 				F318E38926382A8400202F47 /* LaunchScreen.storyboard */,
 				F318E38C26382A8400202F47 /* Info.plist */,
-				F390E917263951A3002659B8 /* Colors.swift */,
+				F3B26A66263D04F1003EC362 /* Instrums.xcdatamodeld */,
 			);
 			path = Instrums;
 			sourceTree = "<group>";
@@ -133,6 +150,11 @@
 		F390E914263950A4002659B8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F3B26A69263D0761003EC362 /* Instruments+CoreDataClass.swift */,
+				F3B26A6A263D0761003EC362 /* Instruments+CoreDataProperties.swift */,
+				F3B26A6B263D0761003EC362 /* Steps+CoreDataClass.swift */,
+				F3B26A6C263D0761003EC362 /* Steps+CoreDataProperties.swift */,
+				F3B26A73263D0E0B003EC362 /* Repository.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -154,6 +176,16 @@
 				F34A62AC263AB4AE00ED7486 /* HowToPlayViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		F3B26A61263CEEBC003EC362 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				F390E917263951A3002659B8 /* Colors.swift */,
+				F3B26A62263CEEDA003EC362 /* StepCell.swift */,
+				F3B26A63263CEEDA003EC362 /* StepCell.xib */,
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +252,7 @@
 				F3449E13263BD0E400C725EA /* Accordion.mp3 in Resources */,
 				F3449E0F263BD0E400C725EA /* Cowbell.mp3 in Resources */,
 				F3449E14263BD0E400C725EA /* Panpipe.mp3 in Resources */,
+				F3B26A65263CEEDA003EC362 /* StepCell.xib in Resources */,
 				F3449E08263BD0E400C725EA /* Guitar.mp3 in Resources */,
 				F3449E15263BD0E400C725EA /* Violin.mp3 in Resources */,
 				F3449E12263BD0E400C725EA /* Drum.mp3 in Resources */,
@@ -241,13 +274,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3B26A6D263D0761003EC362 /* Instruments+CoreDataClass.swift in Sources */,
+				F3B26A68263D04F2003EC362 /* Instrums.xcdatamodeld in Sources */,
 				F318E38326382A8300202F47 /* ViewController.swift in Sources */,
 				F34A62AB263AA81500ED7486 /* CongratulationsViewController.swift in Sources */,
 				F390E91A26395BED002659B8 /* QuizViewController.swift in Sources */,
+				F3B26A6E263D0761003EC362 /* Instruments+CoreDataProperties.swift in Sources */,
 				F34A62AD263AB4AE00ED7486 /* HowToPlayViewController.swift in Sources */,
+				F3B26A74263D0E0B003EC362 /* Repository.swift in Sources */,
 				F390E918263951A3002659B8 /* Colors.swift in Sources */,
+				F3B26A64263CEEDA003EC362 /* StepCell.swift in Sources */,
 				F318E37F26382A8300202F47 /* AppDelegate.swift in Sources */,
 				F318E38126382A8300202F47 /* SceneDelegate.swift in Sources */,
+				F3B26A6F263D0761003EC362 /* Steps+CoreDataClass.swift in Sources */,
+				F3B26A70263D0761003EC362 /* Steps+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +489,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F3B26A66263D04F1003EC362 /* Instrums.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F3B26A67263D04F2003EC362 /* Instrums.xcdatamodel */,
+			);
+			currentVersion = F3B26A67263D04F2003EC362 /* Instrums.xcdatamodel */;
+			path = Instrums.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F318E37326382A8300202F47 /* Project object */;
 }

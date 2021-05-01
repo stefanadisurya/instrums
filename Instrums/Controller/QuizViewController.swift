@@ -7,14 +7,17 @@
 
 import UIKit
 import AVFoundation
+import CoreData
 
 class QuizViewController: UIViewController {
     
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var instrumentButton: UIButton!
     
-    var instruments: [String] = ["Accordion", "Banjo", "Bass", "Bongo", "Cowbell", "Drum", "Fork", "Guitar", "Harp", "Horn", "Keyboard", "Panpipe", "Saxophone", "Trumpet", "Violin"].shuffled()
+    var instruments: [Instruments] = [].shuffled()
     var correctAnswer = Int.random(in: 0 ... 2)
+    
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     var tag: Int = 0
     var score: Int = 0
@@ -32,8 +35,20 @@ class QuizViewController: UIViewController {
         
         Colors.setBackground(view: self.view)
         
+        fetchInstruments()
+        
         self.tag = 0
         setUpButton()
+    }
+    
+    func fetchInstruments() {
+        do {
+            let request = Instruments.fetchRequest() as NSFetchRequest<Instruments>
+            
+            self.instruments = try context.fetch(request)
+        } catch {
+            
+        }
     }
     
     @IBAction func playInstrument() {
@@ -69,7 +84,7 @@ class QuizViewController: UIViewController {
             
             answerButton.layer.cornerRadius = 10
             answerButton.backgroundColor = .white
-            answerButton.setTitle("\(instruments[i])", for: .normal)
+            answerButton.setTitle("\((instruments[i].name)!)", for: .normal)
             answerButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
             
             if self.tag == 0 {
@@ -83,10 +98,10 @@ class QuizViewController: UIViewController {
             answerButton.tag = tag
             self.tag += 1
             
-            imageName = "\(instruments[self.correctAnswer])"
+            imageName = "\((instruments[self.correctAnswer].name)!)"
             instrumentButton.setImage(UIImage(named: imageName), for: .normal)
             
-            self.currentSong = "\(instruments[self.correctAnswer])"
+            self.currentSong = "\((instruments[self.correctAnswer].name)!)"
             
             answerButton.addTarget(self, action: #selector(self.checkAnswer(sender:)), for: .touchUpInside)
             
@@ -103,11 +118,11 @@ class QuizViewController: UIViewController {
         if sender.titleLabel?.text == self.imageName {
             self.score += 1
             alertTitle = "Correct!"
-            alertMessage = "Nice"
+            alertMessage = "\((instruments[self.correctAnswer].fact)!)"
         } else {
             self.score += 0
             alertTitle = "Oops!"
-            alertMessage = "It's a \(self.instruments[correctAnswer])"
+            alertMessage = "It's a \((self.instruments[self.correctAnswer].name)!)"
         }
         
         let alert = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .alert)
