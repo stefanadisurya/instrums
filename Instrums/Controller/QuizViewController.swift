@@ -25,6 +25,7 @@ class QuizViewController: UIViewController {
     
     var imageName: String = ""
     var isFinished: Bool = false
+    var isFlipped: Bool = false
     
     var color: UIColor = UIColor(red: 1.0/255.0, green: 86.0/255.0, blue: 151.0/255.0, alpha: 1.0)
     
@@ -35,13 +36,94 @@ class QuizViewController: UIViewController {
         
         Colors.setBackground(view: self.view)
         
+        generateInstruments()
         fetchInstruments()
         
         self.tag = 0
         setUpButton()
     }
     
+    func generateInstruments() {
+            let instrument1 = NSEntityDescription.insertNewObject(forEntityName: "Instruments", into: context) as! Instruments
+            instrument1.name = "Accordion"
+            instrument1.fact = "In 🇩🇪, 'Akkord' means 'musical chord, concord of sounds'."
+
+            let instrument2 = NSEntityDescription.insertNewObject(forEntityName: "Instruments", into: context) as! Instruments
+            instrument2.name = "Banjo"
+            instrument2.fact = "Banjo was invented by West Africans 🧑🏿‍🦱"
+
+            let instrument3 = NSEntityDescription.insertNewObject(forEntityName: "Instruments", into: context) as! Instruments
+            instrument3.name = "Bass"
+            instrument3.fact = "Bass is the key to a solid 'music ground' 💪"
+
+            let instrument4 = NSEntityDescription.insertNewObject(forEntityName: "Instruments", into: context) as! Instruments
+            instrument4.name = "Bongo"
+            instrument4.fact = "Bongo always come as a pair 👫"
+
+            let instrument5 = NSEntityDescription.insertNewObject(forEntityName: "Instruments", into: context) as! Instruments
+            instrument5.name = "Cowbell"
+            instrument5.fact = "Cowbell is mainly used in Latin music 💃🏽"
+
+            let instrument6 = NSEntityDescription.insertNewObject(forEntityName: "Instruments", into: context) as! Instruments
+            instrument6.name = "Drum"
+            instrument6.fact = "The oldest drum to be discovered is the Alligator Drum 🥁"
+
+            let instrument7 = NSEntityDescription.insertNewObject(forEntityName: "Instruments", into: context) as! Instruments
+            instrument7.name = "Fork"
+            instrument7.fact = "John Shore invented tuning fork in 1752 🍴"
+
+            let instrument8 = NSEntityDescription.insertNewObject(forEntityName: "Instruments", into: context) as! Instruments
+            instrument8.name = "Guitar"
+            instrument8.fact = "The shortest guitar is just 10 microns 🎸"
+
+            let instrument9 = NSEntityDescription.insertNewObject(forEntityName: "Instruments", into: context) as! Instruments
+            instrument9.name = "Harp"
+            instrument9.fact = "Harp is believed to have existed since 15,000 BC 🦖"
+
+            let instrument10 = NSEntityDescription.insertNewObject(forEntityName: "Instruments", into: context) as! Instruments
+            instrument10.name = "Horn"
+            instrument10.fact = "It was used especially by postilions of the 18th and 19th centuries 👨🏻‍✈️"
+
+            let instrument11 = NSEntityDescription.insertNewObject(forEntityName: "Instruments", into: context) as! Instruments
+            instrument11.name = "Keyboard"
+            instrument11.fact = "Keyboard is capable on producing a vairty of sounds 🎹"
+
+            let instrument12 = NSEntityDescription.insertNewObject(forEntityName: "Instruments", into: context) as! Instruments
+            instrument12.name = "Panpipe"
+            instrument12.fact = "Panpipe is also called syrinx 😲"
+
+            let instrument13 = NSEntityDescription.insertNewObject(forEntityName: "Instruments", into: context) as! Instruments
+            instrument13.name = "Saxophone"
+            instrument13.fact = "The standard saxophone has 23 keys 🎶"
+
+            let instrument14 = NSEntityDescription.insertNewObject(forEntityName: "Instruments", into: context) as! Instruments
+            instrument14.name = "Trumpet"
+            instrument14.fact = "Trumpet are actually 3500 years old 👴🏻"
+
+            let instrument15 = NSEntityDescription.insertNewObject(forEntityName: "Instruments", into: context) as! Instruments
+            instrument15.name = "Violin"
+            instrument15.fact = "Playing the violin burns approximately 170 calories per hour 🏋🏻‍♂️"
+
+            do {
+                try self.context.save()
+            } catch {
+
+            }
+        }
+    
+    func deleteData() {
+        let DelAllReqVar = NSBatchDeleteRequest(fetchRequest: NSFetchRequest<NSFetchRequestResult>(entityName: "Instruments"))
+        
+        do {
+            try context.execute(DelAllReqVar)
+        }
+        catch {
+            print(error)
+        }
+    }
+    
     func fetchInstruments() {
+        
         do {
             let request = Instruments.fetchRequest() as NSFetchRequest<Instruments>
             
@@ -112,17 +194,31 @@ class QuizViewController: UIViewController {
     @objc func checkAnswer(sender: UIButton!) {
         var alertTitle = ""
         var alertMessage = ""
+        var flippedMessage = ""
         
         stopInstrument()
+        isFlipped = true
         
         if sender.titleLabel?.text == self.imageName {
             self.score += 1
             alertTitle = "Correct!"
             alertMessage = "\((instruments[self.correctAnswer].fact)!)"
+            flippedMessage = "✅"
         } else {
             self.score += 0
             alertTitle = "Oops!"
             alertMessage = "It's a \((self.instruments[self.correctAnswer].name)!)"
+            flippedMessage = "❌"
+        }
+        
+        if isFlipped {
+            isFlipped = false
+            sender.setTitle(flippedMessage, for: .normal)
+            UIView.transition(with: sender, duration: 0.3, options: .transitionFlipFromLeft, animations: nil, completion: nil)
+        } else {
+            isFlipped = true
+            sender.setTitle("", for: .normal)
+            UIView.transition(with: sender, duration: 0.3, options: .transitionFlipFromRight, animations: nil, completion: nil)
         }
         
         let alert = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .alert)
@@ -151,6 +247,8 @@ class QuizViewController: UIViewController {
     }
     
     func nextQuestion() {
+        self.instruments.removeAll()
+        self.deleteData()
         self.instruments.shuffle()
         self.correctAnswer = Int.random(in: 0 ... 2)
         self.viewDidLoad()
