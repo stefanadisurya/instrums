@@ -14,6 +14,9 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var instrumentButton: UIButton!
     
+    var instrumentNames = [String]()
+    var instrumentFacts = [String]()
+    
     var instruments: [Instruments] = [].shuffled()
     var correctAnswer = Int.random(in: 0 ... 2)
     
@@ -34,6 +37,9 @@ class QuizViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        instrumentNames = InstrumentRepository.generateInstrumentNames()
+        instrumentFacts = InstrumentRepository.generateInstrumentFacts()
+        
         Colors.setBackground(view: self.view)
         
         generateInstruments()
@@ -43,73 +49,23 @@ class QuizViewController: UIViewController {
         setUpButton()
     }
     
+    func createInstrument(name: String, fact: String) {
+        let instrument = NSEntityDescription.insertNewObject(forEntityName: "Instruments", into: context) as! Instruments
+        instrument.name = name
+        instrument.fact = fact
+    }
+    
     func generateInstruments() {
-            let instrument1 = NSEntityDescription.insertNewObject(forEntityName: "Instruments", into: context) as! Instruments
-            instrument1.name = "Accordion"
-            instrument1.fact = "In 🇩🇪, 'Akkord' means 'musical chord, concord of sounds'."
-
-            let instrument2 = NSEntityDescription.insertNewObject(forEntityName: "Instruments", into: context) as! Instruments
-            instrument2.name = "Banjo"
-            instrument2.fact = "Banjo was invented by West Africans 🧑🏿‍🦱"
-
-            let instrument3 = NSEntityDescription.insertNewObject(forEntityName: "Instruments", into: context) as! Instruments
-            instrument3.name = "Bass"
-            instrument3.fact = "Bass is the key to a solid 'music ground' 💪"
-
-            let instrument4 = NSEntityDescription.insertNewObject(forEntityName: "Instruments", into: context) as! Instruments
-            instrument4.name = "Bongo"
-            instrument4.fact = "Bongo always come as a pair 👫"
-
-            let instrument5 = NSEntityDescription.insertNewObject(forEntityName: "Instruments", into: context) as! Instruments
-            instrument5.name = "Cowbell"
-            instrument5.fact = "Cowbell is mainly used in Latin music 💃🏽"
-
-            let instrument6 = NSEntityDescription.insertNewObject(forEntityName: "Instruments", into: context) as! Instruments
-            instrument6.name = "Drum"
-            instrument6.fact = "The oldest drum to be discovered is the Alligator Drum 🥁"
-
-            let instrument7 = NSEntityDescription.insertNewObject(forEntityName: "Instruments", into: context) as! Instruments
-            instrument7.name = "Fork"
-            instrument7.fact = "John Shore invented tuning fork in 1752 🍴"
-
-            let instrument8 = NSEntityDescription.insertNewObject(forEntityName: "Instruments", into: context) as! Instruments
-            instrument8.name = "Guitar"
-            instrument8.fact = "The shortest guitar is just 10 microns 🎸"
-
-            let instrument9 = NSEntityDescription.insertNewObject(forEntityName: "Instruments", into: context) as! Instruments
-            instrument9.name = "Harp"
-            instrument9.fact = "Harp is believed to have existed since 15,000 BC 🦖"
-
-            let instrument10 = NSEntityDescription.insertNewObject(forEntityName: "Instruments", into: context) as! Instruments
-            instrument10.name = "Horn"
-            instrument10.fact = "It was used especially by postilions of the 18th and 19th centuries 👨🏻‍✈️"
-
-            let instrument11 = NSEntityDescription.insertNewObject(forEntityName: "Instruments", into: context) as! Instruments
-            instrument11.name = "Keyboard"
-            instrument11.fact = "Keyboard is capable on producing a vairty of sounds 🎹"
-
-            let instrument12 = NSEntityDescription.insertNewObject(forEntityName: "Instruments", into: context) as! Instruments
-            instrument12.name = "Panpipe"
-            instrument12.fact = "Panpipe is also called syrinx 😲"
-
-            let instrument13 = NSEntityDescription.insertNewObject(forEntityName: "Instruments", into: context) as! Instruments
-            instrument13.name = "Saxophone"
-            instrument13.fact = "The standard saxophone has 23 keys 🎶"
-
-            let instrument14 = NSEntityDescription.insertNewObject(forEntityName: "Instruments", into: context) as! Instruments
-            instrument14.name = "Trumpet"
-            instrument14.fact = "Trumpet are actually 3500 years old 👴🏻"
-
-            let instrument15 = NSEntityDescription.insertNewObject(forEntityName: "Instruments", into: context) as! Instruments
-            instrument15.name = "Violin"
-            instrument15.fact = "Playing the violin burns approximately 170 calories per hour 🏋🏻‍♂️"
-
-            do {
-                try self.context.save()
-            } catch {
-
-            }
+        for i in 0..<instrumentNames.count {
+            createInstrument(name: instrumentNames[i], fact: instrumentFacts[i])
         }
+
+        do {
+            try self.context.save()
+        } catch {
+
+        }
+    }
     
     func deleteData() {
         let DelAllReqVar = NSBatchDeleteRequest(fetchRequest: NSFetchRequest<NSFetchRequestResult>(entityName: "Instruments"))
@@ -255,10 +211,13 @@ class QuizViewController: UIViewController {
     }
     
     @IBAction func howToPlay(_ sender: Any) {
+        stopInstrument()
         performSegue(withIdentifier: "howToPlay", sender: nil)
     }
     
     @IBAction func quitQuiz(_ sender: Any) {
+        stopInstrument()
+        
         let alert = UIAlertController(title: "Are you sure?", message: "Any progress will be lost", preferredStyle: .alert)
         
         let quitButton = UIAlertAction(title: "Quit", style: .default) { (action) in

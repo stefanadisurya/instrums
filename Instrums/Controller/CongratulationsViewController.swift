@@ -20,6 +20,7 @@ class CongratulationsViewController: UIViewController {
         Colors.setBackground(view: self.view)
         
         playAgainButton.layer.cornerRadius = 10
+        playAgainButton.setTitleColor(self.color, for: .normal)
     }
     
     @IBAction func playAgain(_ sender: Any) {

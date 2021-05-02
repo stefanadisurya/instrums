@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QMR-3h-rOD">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Congratulations View Controller-->
+        <scene sceneID="L0G-IJ-XSC">
+            <objects>
+                <viewController id="QMR-3h-rOD" customClass="CongratulationsViewController" customModule="Instrums" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yot-WD-ccN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Trophy" translatesAutoresizingMaskIntoConstraints="NO" id="oqQ-8t-oOd">
+                                <rect key="frame" x="120" y="294" width="175" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="VoL-8R-pAP"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are an instrument mania!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OPU-Ue-Dzb">
+                                <rect key="frame" x="75" y="492" width="260" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="9bw-Uh-TNT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJE-At-3bz">
+                                <rect key="frame" x="24" y="753" width="367" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Gc6-Jq-diS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <state key="normal" title="Play Again"/>
+                                <connections>
+                                    <action selector="playAgain:" destination="QMR-3h-rOD" eventType="touchUpInside" id="kZO-GC-0WS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yml-gv-OuI">
+                                <rect key="frame" x="24" y="811" width="367" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8UL-5J-ZpH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <state key="normal" title="Back to Home">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="backToHome:" destination="QMR-3h-rOD" eventType="touchUpInside" id="4co-aw-CFa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mym-ga-xXa">
+                                <rect key="frame" x="85" y="144" width="245" height="86"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wg8-Hk-h9v"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstItem="wg8-Hk-h9v" firstAttribute="trailing" secondItem="YJE-At-3bz" secondAttribute="trailing" constant="23" id="700-7l-lHy"/>
+                            <constraint firstItem="mym-ga-xXa" firstAttribute="leading" secondItem="wg8-Hk-h9v" secondAttribute="leading" constant="85" id="8dA-Th-mID"/>
+                            <constraint firstItem="wg8-Hk-h9v" firstAttribute="trailing" secondItem="mym-ga-xXa" secondAttribute="trailing" constant="84" id="9cQ-bg-a4i"/>
+                            <constraint firstItem="OPU-Ue-Dzb" firstAttribute="leading" secondItem="wg8-Hk-h9v" secondAttribute="leading" constant="75" id="9eg-bJ-NaP"/>
+                            <constraint firstItem="oqQ-8t-oOd" firstAttribute="leading" secondItem="wg8-Hk-h9v" secondAttribute="leading" constant="120" id="Hfp-1a-aWr"/>
+                            <constraint firstAttribute="bottom" secondItem="OPU-Ue-Dzb" secondAttribute="bottom" constant="383" id="Ij1-0m-Uem"/>
+                            <constraint firstItem="wg8-Hk-h9v" firstAttribute="trailing" secondItem="Yml-gv-OuI" secondAttribute="trailing" constant="23" id="L6E-sU-4xE"/>
+                            <constraint firstItem="oqQ-8t-oOd" firstAttribute="top" secondItem="mym-ga-xXa" secondAttribute="bottom" constant="64" id="NJT-mq-mZg"/>
+                            <constraint firstItem="wg8-Hk-h9v" firstAttribute="trailing" secondItem="OPU-Ue-Dzb" secondAttribute="trailing" constant="79" id="Wjd-sl-1uc"/>
+                            <constraint firstItem="YJE-At-3bz" firstAttribute="leading" secondItem="wg8-Hk-h9v" secondAttribute="leading" constant="24" id="dBk-TA-B0S"/>
+                            <constraint firstItem="OPU-Ue-Dzb" firstAttribute="top" secondItem="oqQ-8t-oOd" secondAttribute="bottom" constant="48" id="jF8-zb-4hA"/>
+                            <constraint firstItem="Yml-gv-OuI" firstAttribute="top" secondItem="YJE-At-3bz" secondAttribute="bottom" constant="8" id="jON-zM-FJx"/>
+                            <constraint firstItem="oqQ-8t-oOd" firstAttribute="centerX" secondItem="mym-ga-xXa" secondAttribute="centerX" id="k5M-cK-qYv"/>
+                            <constraint firstItem="Yml-gv-OuI" firstAttribute="leading" secondItem="wg8-Hk-h9v" secondAttribute="leading" constant="24" id="uYy-cR-YWw"/>
+                            <constraint firstItem="mym-ga-xXa" firstAttribute="top" secondItem="wg8-Hk-h9v" secondAttribute="top" constant="100" id="vhw-fu-CHc"/>
+                            <constraint firstItem="YJE-At-3bz" firstAttribute="top" secondItem="OPU-Ue-Dzb" secondAttribute="bottom" constant="240" id="xBh-01-J5Z"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backToHomeButton" destination="Yml-gv-OuI" id="yN1-xk-F4C"/>
+                        <outlet property="playAgainButton" destination="YJE-At-3bz" id="VLO-Xg-ElZ"/>
+                        <segue destination="9Lc-K6-jQY" kind="presentation" identifier="navigateToQuiz" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="BT4-On-fMs"/>
+                        <segue destination="jcd-V1-Fxz" kind="presentation" identifier="navigateToHome" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="lks-pf-qNe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bii-r0-f8C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2133.8461538461538" y="88.862559241706151"/>
+        </scene>
+        <!--UIViewController-Mhu-gl-Oak-->
+        <scene sceneID="WA4-YI-QAw">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="UIViewController-Mhu-gl-Oak" id="9Lc-K6-jQY" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pE4-Xh-d8O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1130.7692307692307" y="88.862559241706151"/>
+        </scene>
+        <!--UIViewController-BYZ-38-t0r-->
+        <scene sceneID="f49-Q4-sfp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="UIViewController-BYZ-38-t0r" id="jcd-V1-Fxz" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R4P-1S-QL8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.76923076923077" y="88.862559241706151"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Trophy" width="441" height="450"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

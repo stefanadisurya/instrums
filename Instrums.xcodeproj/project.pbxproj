@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F30E1B70263E6E7B009F358D /* Congratulations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F30E1B6F263E6E7B009F358D /* Congratulations.storyboard */; };
+		F30E1B73263E6ECC009F358D /* Quiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F30E1B71263E6ECC009F358D /* Quiz.storyboard */; };
+		F30E1B75263E6F54009F358D /* HowToPlay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F30E1B74263E6F54009F358D /* HowToPlay.storyboard */; };
 		F318E37F26382A8300202F47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F318E37E26382A8300202F47 /* AppDelegate.swift */; };
 		F318E38126382A8300202F47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F318E38026382A8300202F47 /* SceneDelegate.swift */; };
 		F318E38326382A8300202F47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F318E38226382A8300202F47 /* ViewController.swift */; };
@@ -43,6 +46,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F30E1B6F263E6E7B009F358D /* Congratulations.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Congratulations.storyboard; sourceTree = "<group>"; };
+		F30E1B72263E6ECC009F358D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Instrums/View/Base.lproj/Quiz.storyboard; sourceTree = "<group>"; };
+		F30E1B74263E6F54009F358D /* HowToPlay.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HowToPlay.storyboard; sourceTree = "<group>"; };
 		F318E37B26382A8300202F47 /* Instrums.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instrums.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F318E37E26382A8300202F47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F318E38026382A8300202F47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -163,6 +169,9 @@
 			isa = PBXGroup;
 			children = (
 				F318E38426382A8300202F47 /* Main.storyboard */,
+				F30E1B71263E6ECC009F358D /* Quiz.storyboard */,
+				F30E1B74263E6F54009F358D /* HowToPlay.storyboard */,
+				F30E1B6F263E6E7B009F358D /* Congratulations.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -172,8 +181,8 @@
 			children = (
 				F318E38226382A8300202F47 /* ViewController.swift */,
 				F390E91926395BED002659B8 /* QuizViewController.swift */,
-				F34A62AA263AA81500ED7486 /* CongratulationsViewController.swift */,
 				F34A62AC263AB4AE00ED7486 /* HowToPlayViewController.swift */,
+				F34A62AA263AA81500ED7486 /* CongratulationsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -247,6 +256,8 @@
 			files = (
 				F3449E0D263BD0E400C725EA /* Trumpet.mp3 in Resources */,
 				F3449E0C263BD0E400C725EA /* Fork.mp3 in Resources */,
+				F30E1B73263E6ECC009F358D /* Quiz.storyboard in Resources */,
+				F30E1B70263E6E7B009F358D /* Congratulations.storyboard in Resources */,
 				F3449E0E263BD0E400C725EA /* Saxophone.mp3 in Resources */,
 				F3449E11263BD0E400C725EA /* Bass.mp3 in Resources */,
 				F3449E13263BD0E400C725EA /* Accordion.mp3 in Resources */,
@@ -259,6 +270,7 @@
 				F3449E0A263BD0E400C725EA /* Banjo.mp3 in Resources */,
 				F3449E16263BD0E400C725EA /* Keyboard.mp3 in Resources */,
 				F318E38B26382A8400202F47 /* LaunchScreen.storyboard in Resources */,
+				F30E1B75263E6F54009F358D /* HowToPlay.storyboard in Resources */,
 				F3449E10263BD0E400C725EA /* Bongo.mp3 in Resources */,
 				F3449E09263BD0E400C725EA /* Harp.mp3 in Resources */,
 				F318E38826382A8400202F47 /* Assets.xcassets in Resources */,
@@ -294,6 +306,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		F30E1B71263E6ECC009F358D /* Quiz.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F30E1B72263E6ECC009F358D /* Base */,
+			);
+			name = Quiz.storyboard;
+			sourceTree = "<group>";
+		};
 		F318E38426382A8300202F47 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
