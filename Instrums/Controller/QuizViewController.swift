@@ -68,10 +68,10 @@ class QuizViewController: UIViewController {
     }
     
     func deleteData() {
-        let DelAllReqVar = NSBatchDeleteRequest(fetchRequest: NSFetchRequest<NSFetchRequestResult>(entityName: "Instruments"))
+        let deleteAll = NSBatchDeleteRequest(fetchRequest: NSFetchRequest<NSFetchRequestResult>(entityName: "Instruments"))
         
         do {
-            try context.execute(DelAllReqVar)
+            try context.execute(deleteAll)
         }
         catch {
             print(error)
@@ -79,7 +79,6 @@ class QuizViewController: UIViewController {
     }
     
     func fetchInstruments() {
-        
         do {
             let request = Instruments.fetchRequest() as NSFetchRequest<Instruments>
             

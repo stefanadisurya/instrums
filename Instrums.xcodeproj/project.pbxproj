@@ -38,8 +38,6 @@
 		F3B26A64263CEEDA003EC362 /* StepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B26A62263CEEDA003EC362 /* StepCell.swift */; };
 		F3B26A65263CEEDA003EC362 /* StepCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3B26A63263CEEDA003EC362 /* StepCell.xib */; };
 		F3B26A68263D04F2003EC362 /* Instrums.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F3B26A66263D04F1003EC362 /* Instrums.xcdatamodeld */; };
-		F3B26A6F263D0761003EC362 /* Steps+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B26A6B263D0761003EC362 /* Steps+CoreDataClass.swift */; };
-		F3B26A70263D0761003EC362 /* Steps+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B26A6C263D0761003EC362 /* Steps+CoreDataProperties.swift */; };
 		F3B26A74263D0E0B003EC362 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B26A73263D0E0B003EC362 /* Repository.swift */; };
 		F3B26A77263D228B003EC362 /* Instruments+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B26A75263D228B003EC362 /* Instruments+CoreDataClass.swift */; };
 		F3B26A78263D228B003EC362 /* Instruments+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B26A76263D228B003EC362 /* Instruments+CoreDataProperties.swift */; };
@@ -79,8 +77,6 @@
 		F3B26A62263CEEDA003EC362 /* StepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCell.swift; sourceTree = "<group>"; };
 		F3B26A63263CEEDA003EC362 /* StepCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StepCell.xib; sourceTree = "<group>"; };
 		F3B26A67263D04F2003EC362 /* Instrums.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Instrums.xcdatamodel; sourceTree = "<group>"; };
-		F3B26A6B263D0761003EC362 /* Steps+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Steps+CoreDataClass.swift"; sourceTree = "<group>"; };
-		F3B26A6C263D0761003EC362 /* Steps+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Steps+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F3B26A73263D0E0B003EC362 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		F3B26A75263D228B003EC362 /* Instruments+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Instruments+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F3B26A76263D228B003EC362 /* Instruments+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Instruments+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -158,8 +154,6 @@
 			children = (
 				F3B26A75263D228B003EC362 /* Instruments+CoreDataClass.swift */,
 				F3B26A76263D228B003EC362 /* Instruments+CoreDataProperties.swift */,
-				F3B26A6B263D0761003EC362 /* Steps+CoreDataClass.swift */,
-				F3B26A6C263D0761003EC362 /* Steps+CoreDataProperties.swift */,
 				F3B26A73263D0E0B003EC362 /* Repository.swift */,
 			);
 			path = Model;
@@ -298,8 +292,6 @@
 				F318E37F26382A8300202F47 /* AppDelegate.swift in Sources */,
 				F318E38126382A8300202F47 /* SceneDelegate.swift in Sources */,
 				F3B26A77263D228B003EC362 /* Instruments+CoreDataClass.swift in Sources */,
-				F3B26A6F263D0761003EC362 /* Steps+CoreDataClass.swift in Sources */,
-				F3B26A70263D0761003EC362 /* Steps+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

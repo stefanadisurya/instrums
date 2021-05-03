@@ -4,11 +4,7 @@
         <attribute name="fact" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
     </entity>
-    <entity name="Steps" representedClassName="Steps" syncable="YES">
-        <attribute name="step" optional="YES" attributeType="String"/>
-    </entity>
     <elements>
-        <element name="Steps" positionX="-54" positionY="9" width="128" height="44"/>
         <element name="Instruments" positionX="-27" positionY="45" width="128" height="59"/>
     </elements>
 </model>
