@@ -19,8 +19,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="HXM-qJ-ee7">
                                 <rect key="frame" x="48" y="296" width="294" height="138"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Know Your Instrument" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCr-J0-q3q">
-                                <rect key="frame" x="91" y="410" width="209" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Know Your Instrument" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCr-J0-q3q">
+                                <rect key="frame" x="16" y="410" width="358" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -36,10 +36,10 @@
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                         <constraints>
                             <constraint firstItem="HXM-qJ-ee7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="3qC-B2-a65"/>
-                            <constraint firstItem="PCr-J0-q3q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="91" id="Lur-px-jIp"/>
+                            <constraint firstItem="PCr-J0-q3q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Lur-px-jIp"/>
                             <constraint firstItem="Sh3-Pt-Bh9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="T20-hJ-Ert"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sh3-Pt-Bh9" secondAttribute="trailing" constant="86" id="Wq9-KG-qip"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PCr-J0-q3q" secondAttribute="trailing" constant="90" id="j0Q-78-TeY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PCr-J0-q3q" secondAttribute="trailing" constant="16" id="j0Q-78-TeY"/>
                             <constraint firstItem="PCr-J0-q3q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="366" id="ogH-Ts-2cp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Sh3-Pt-Bh9" secondAttribute="bottom" constant="30" id="owq-5C-h0t"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HXM-qJ-ee7" secondAttribute="trailing" constant="48" id="qPL-x3-Pcx"/>
