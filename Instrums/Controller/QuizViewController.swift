@@ -193,7 +193,7 @@ class QuizViewController: UIViewController {
             self.performSegue(withIdentifier: "navigateToCongratulations", sender: nil)
         }
         
-        if self.score == 1 {
+        if self.score == 10 {
             alert2.addAction(okButton)
             self.present(alert2, animated: true, completion: nil)
             self.score = 0

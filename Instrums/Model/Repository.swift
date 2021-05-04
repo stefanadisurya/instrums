@@ -28,7 +28,7 @@ class InstrumentRepository {
             "The shortest guitar is just 10 microns 🎸",
             "Harp is believed to have existed since 15,000 BC 🦖",
             "It was used especially by postilions of the 18th and 19th centuries 👨🏻‍✈️",
-            "Keyboard is capable on producing a vairty of sounds 🎹",
+            "Keyboard is capable on producing a variety of sounds 🎹",
             "Panpipe is also called syrinx 😲",
             "The standard saxophone has 23 keys 🎶",
             "Trumpet are actually 3500 years old 👴🏻",
