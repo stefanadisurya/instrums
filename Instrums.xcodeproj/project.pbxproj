@@ -33,6 +33,10 @@
 		F3449E16263BD0E400C725EA /* Keyboard.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3449E07263BD0E400C725EA /* Keyboard.mp3 */; };
 		F34A62AB263AA81500ED7486 /* CongratulationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A62AA263AA81500ED7486 /* CongratulationsViewController.swift */; };
 		F34A62AD263AB4AE00ED7486 /* HowToPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A62AC263AB4AE00ED7486 /* HowToPlayViewController.swift */; };
+		F374650A2640E806007D543B /* Background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F37465092640E806007D543B /* Background.mp3 */; };
+		F374650C2640E812007D543B /* Correct.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F374650B2640E812007D543B /* Correct.mp3 */; };
+		F374650E2640E81D007D543B /* Wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F374650D2640E81D007D543B /* Wrong.mp3 */; };
+		F37465122640F2F9007D543B /* Congratulations.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F37465112640F2F9007D543B /* Congratulations.mp3 */; };
 		F390E918263951A3002659B8 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F390E917263951A3002659B8 /* Colors.swift */; };
 		F390E91A26395BED002659B8 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F390E91926395BED002659B8 /* QuizViewController.swift */; };
 		F3B26A64263CEEDA003EC362 /* StepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B26A62263CEEDA003EC362 /* StepCell.swift */; };
@@ -72,6 +76,10 @@
 		F3449E07263BD0E400C725EA /* Keyboard.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Keyboard.mp3; sourceTree = "<group>"; };
 		F34A62AA263AA81500ED7486 /* CongratulationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationsViewController.swift; sourceTree = "<group>"; };
 		F34A62AC263AB4AE00ED7486 /* HowToPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayViewController.swift; sourceTree = "<group>"; };
+		F37465092640E806007D543B /* Background.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Background.mp3; sourceTree = "<group>"; };
+		F374650B2640E812007D543B /* Correct.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Correct.mp3; sourceTree = "<group>"; };
+		F374650D2640E81D007D543B /* Wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Wrong.mp3; sourceTree = "<group>"; };
+		F37465112640F2F9007D543B /* Congratulations.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Congratulations.mp3; sourceTree = "<group>"; };
 		F390E917263951A3002659B8 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		F390E91926395BED002659B8 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		F3B26A62263CEEDA003EC362 /* StepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCell.swift; sourceTree = "<group>"; };
@@ -145,6 +153,10 @@
 				F3449E05263BD0E400C725EA /* Panpipe.mp3 */,
 				F3449E06263BD0E400C725EA /* Violin.mp3 */,
 				F3449E07263BD0E400C725EA /* Keyboard.mp3 */,
+				F37465092640E806007D543B /* Background.mp3 */,
+				F374650B2640E812007D543B /* Correct.mp3 */,
+				F374650D2640E81D007D543B /* Wrong.mp3 */,
+				F37465112640F2F9007D543B /* Congratulations.mp3 */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -250,6 +262,7 @@
 			files = (
 				F3449E0D263BD0E400C725EA /* Trumpet.mp3 in Resources */,
 				F3449E0C263BD0E400C725EA /* Fork.mp3 in Resources */,
+				F37465122640F2F9007D543B /* Congratulations.mp3 in Resources */,
 				F30E1B73263E6ECC009F358D /* Quiz.storyboard in Resources */,
 				F30E1B70263E6E7B009F358D /* Congratulations.storyboard in Resources */,
 				F3449E0E263BD0E400C725EA /* Saxophone.mp3 in Resources */,
@@ -265,7 +278,10 @@
 				F3449E16263BD0E400C725EA /* Keyboard.mp3 in Resources */,
 				F318E38B26382A8400202F47 /* LaunchScreen.storyboard in Resources */,
 				F30E1B75263E6F54009F358D /* HowToPlay.storyboard in Resources */,
+				F374650E2640E81D007D543B /* Wrong.mp3 in Resources */,
 				F3449E10263BD0E400C725EA /* Bongo.mp3 in Resources */,
+				F374650A2640E806007D543B /* Background.mp3 in Resources */,
+				F374650C2640E812007D543B /* Correct.mp3 in Resources */,
 				F3449E09263BD0E400C725EA /* Harp.mp3 in Resources */,
 				F318E38826382A8400202F47 /* Assets.xcassets in Resources */,
 				F3449E0B263BD0E400C725EA /* Horn.mp3 in Resources */,
@@ -453,6 +469,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.adisurya.Instrums;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -472,6 +489,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.adisurya.Instrums;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

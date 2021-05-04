@@ -159,12 +159,16 @@ class QuizViewController: UIViewController {
             alertTitle = "Correct!"
             alertMessage = "\((instruments[self.correctAnswer].fact)!)"
             flippedMessage = "✅"
+            self.currentSong = "Correct"
         } else {
             self.score += 0
             alertTitle = "Oops!"
             alertMessage = "It's a \((self.instruments[self.correctAnswer].name)!)"
             flippedMessage = "❌"
+            self.currentSong = "Wrong"
         }
+        
+        self.playInstrument()
         
         if isFlipped {
             isFlipped = false
@@ -189,7 +193,7 @@ class QuizViewController: UIViewController {
             self.performSegue(withIdentifier: "navigateToCongratulations", sender: nil)
         }
         
-        if self.score == 10 {
+        if self.score == 1 {
             alert2.addAction(okButton)
             self.present(alert2, animated: true, completion: nil)
             self.score = 0
@@ -205,17 +209,18 @@ class QuizViewController: UIViewController {
         self.instruments.removeAll()
         self.deleteData()
         self.instruments.shuffle()
+        self.stopInstrument()
         self.correctAnswer = Int.random(in: 0 ... 2)
         self.viewDidLoad()
     }
     
     @IBAction func howToPlay(_ sender: Any) {
-        stopInstrument()
+        self.stopInstrument()
         performSegue(withIdentifier: "howToPlay", sender: nil)
     }
     
     @IBAction func quitQuiz(_ sender: Any) {
-        stopInstrument()
+        self.stopInstrument()
         
         let alert = UIAlertController(title: "Are you sure?", message: "Any progress will be lost", preferredStyle: .alert)
         
