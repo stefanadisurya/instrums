@@ -16,6 +16,7 @@
 		F318E38626382A8300202F47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F318E38426382A8300202F47 /* Main.storyboard */; };
 		F318E38826382A8400202F47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F318E38726382A8400202F47 /* Assets.xcassets */; };
 		F318E38B26382A8400202F47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F318E38926382A8400202F47 /* LaunchScreen.storyboard */; };
+		F31F2E1B264249DF006F08A1 /* Keyboard.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F31F2E1A264249DF006F08A1 /* Keyboard.mp3 */; };
 		F3449E08263BD0E400C725EA /* Guitar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3449DF9263BD0E400C725EA /* Guitar.mp3 */; };
 		F3449E09263BD0E400C725EA /* Harp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3449DFA263BD0E400C725EA /* Harp.mp3 */; };
 		F3449E0A263BD0E400C725EA /* Banjo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3449DFB263BD0E400C725EA /* Banjo.mp3 */; };
@@ -30,7 +31,6 @@
 		F3449E13263BD0E400C725EA /* Accordion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3449E04263BD0E400C725EA /* Accordion.mp3 */; };
 		F3449E14263BD0E400C725EA /* Panpipe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3449E05263BD0E400C725EA /* Panpipe.mp3 */; };
 		F3449E15263BD0E400C725EA /* Violin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3449E06263BD0E400C725EA /* Violin.mp3 */; };
-		F3449E16263BD0E400C725EA /* Keyboard.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3449E07263BD0E400C725EA /* Keyboard.mp3 */; };
 		F34A62AB263AA81500ED7486 /* CongratulationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A62AA263AA81500ED7486 /* CongratulationsViewController.swift */; };
 		F34A62AD263AB4AE00ED7486 /* HowToPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A62AC263AB4AE00ED7486 /* HowToPlayViewController.swift */; };
 		F374650A2640E806007D543B /* Background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F37465092640E806007D543B /* Background.mp3 */; };
@@ -59,6 +59,7 @@
 		F318E38726382A8400202F47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F318E38A26382A8400202F47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F318E38C26382A8400202F47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F31F2E1A264249DF006F08A1 /* Keyboard.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Keyboard.mp3; sourceTree = "<group>"; };
 		F3449DF9263BD0E400C725EA /* Guitar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Guitar.mp3; sourceTree = "<group>"; };
 		F3449DFA263BD0E400C725EA /* Harp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Harp.mp3; sourceTree = "<group>"; };
 		F3449DFB263BD0E400C725EA /* Banjo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Banjo.mp3; sourceTree = "<group>"; };
@@ -73,7 +74,6 @@
 		F3449E04263BD0E400C725EA /* Accordion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Accordion.mp3; sourceTree = "<group>"; };
 		F3449E05263BD0E400C725EA /* Panpipe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Panpipe.mp3; sourceTree = "<group>"; };
 		F3449E06263BD0E400C725EA /* Violin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Violin.mp3; sourceTree = "<group>"; };
-		F3449E07263BD0E400C725EA /* Keyboard.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Keyboard.mp3; sourceTree = "<group>"; };
 		F34A62AA263AA81500ED7486 /* CongratulationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationsViewController.swift; sourceTree = "<group>"; };
 		F34A62AC263AB4AE00ED7486 /* HowToPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayViewController.swift; sourceTree = "<group>"; };
 		F37465092640E806007D543B /* Background.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Background.mp3; sourceTree = "<group>"; };
@@ -152,7 +152,7 @@
 				F3449E04263BD0E400C725EA /* Accordion.mp3 */,
 				F3449E05263BD0E400C725EA /* Panpipe.mp3 */,
 				F3449E06263BD0E400C725EA /* Violin.mp3 */,
-				F3449E07263BD0E400C725EA /* Keyboard.mp3 */,
+				F31F2E1A264249DF006F08A1 /* Keyboard.mp3 */,
 				F37465092640E806007D543B /* Background.mp3 */,
 				F374650B2640E812007D543B /* Correct.mp3 */,
 				F374650D2640E81D007D543B /* Wrong.mp3 */,
@@ -269,13 +269,13 @@
 				F3449E11263BD0E400C725EA /* Bass.mp3 in Resources */,
 				F3449E13263BD0E400C725EA /* Accordion.mp3 in Resources */,
 				F3449E0F263BD0E400C725EA /* Cowbell.mp3 in Resources */,
+				F31F2E1B264249DF006F08A1 /* Keyboard.mp3 in Resources */,
 				F3449E14263BD0E400C725EA /* Panpipe.mp3 in Resources */,
 				F3B26A65263CEEDA003EC362 /* StepCell.xib in Resources */,
 				F3449E08263BD0E400C725EA /* Guitar.mp3 in Resources */,
 				F3449E15263BD0E400C725EA /* Violin.mp3 in Resources */,
 				F3449E12263BD0E400C725EA /* Drum.mp3 in Resources */,
 				F3449E0A263BD0E400C725EA /* Banjo.mp3 in Resources */,
-				F3449E16263BD0E400C725EA /* Keyboard.mp3 in Resources */,
 				F318E38B26382A8400202F47 /* LaunchScreen.storyboard in Resources */,
 				F30E1B75263E6F54009F358D /* HowToPlay.storyboard in Resources */,
 				F374650E2640E81D007D543B /* Wrong.mp3 in Resources */,
@@ -463,7 +463,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = AM9KG4TB3A;
 				INFOPLIST_FILE = Instrums/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -484,7 +484,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = AM9KG4TB3A;
 				INFOPLIST_FILE = Instrums/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
