@@ -2,7 +2,7 @@
 
 ![Thumbnail](https://user-images.githubusercontent.com/64721275/118392956-80472e00-b666-11eb-9778-13be41efc7ed.png)
 
-It is an iOS app to help people identify music instrument sounds through mini quiz. The rules are very simple, you just have to score 10 to finish the quiz. Below are the technologies behind Instrums:
+It is an iOS app to help people identify music instrument sounds through mini quiz. The rules are very simple, you just have to score 10 to finish the quiz. It was made using Swift, and below are the technologies behind Instrums:
 - :iphone: UIKIt
 - :trumpet: AVFoundation
 - :books: CoreData
