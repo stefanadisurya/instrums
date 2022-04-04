@@ -2,6 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>BalooBhai2-Bold</string>
+		<string>BalooBhai2-Medium</string>
+		<string>BalooBhai2-ExtraBold</string>
+		<string>BalooBhai2-Regular</string>
+		<string>BalooBhai2-SemiBold</string>
+	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

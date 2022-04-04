@@ -3,10 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F1374948850402506388F88 /* Pods_Instrums.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCDCA6206AE4E96B9753881 /* Pods_Instrums.framework */; };
+		F3081CF227FA9D100015AFDE /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3081CF127FA9D100015AFDE /* MainCoordinator.swift */; };
+		F3081CF427FA9D360015AFDE /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3081CF327FA9D360015AFDE /* Coordinator.swift */; };
+		F3081CF627FA9DA90015AFDE /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3081CF527FA9DA90015AFDE /* Storyboarded.swift */; };
+		F3081CFD27FAAD9B0015AFDE /* BalooBhai2-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3081CF827FAAD9B0015AFDE /* BalooBhai2-Medium.ttf */; };
+		F3081CFE27FAAD9B0015AFDE /* BalooBhai2-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3081CF927FAAD9B0015AFDE /* BalooBhai2-Regular.ttf */; };
+		F3081CFF27FAAD9B0015AFDE /* BalooBhai2-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3081CFA27FAAD9B0015AFDE /* BalooBhai2-SemiBold.ttf */; };
+		F3081D0027FAAD9B0015AFDE /* BalooBhai2-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3081CFB27FAAD9B0015AFDE /* BalooBhai2-ExtraBold.ttf */; };
+		F3081D0127FAAD9B0015AFDE /* BalooBhai2-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3081CFC27FAAD9B0015AFDE /* BalooBhai2-Bold.ttf */; };
+		F3081D0427FAB2E10015AFDE /* MainNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3081D0327FAB2E10015AFDE /* MainNode.swift */; };
 		F30E1B70263E6E7B009F358D /* Congratulations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F30E1B6F263E6E7B009F358D /* Congratulations.storyboard */; };
 		F30E1B73263E6ECC009F358D /* Quiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F30E1B71263E6ECC009F358D /* Quiz.storyboard */; };
 		F30E1B75263E6F54009F358D /* HowToPlay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F30E1B74263E6F54009F358D /* HowToPlay.storyboard */; };
@@ -48,6 +58,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5686CAB636B90405AAEFB696 /* Pods-Instrums.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instrums.debug.xcconfig"; path = "Target Support Files/Pods-Instrums/Pods-Instrums.debug.xcconfig"; sourceTree = "<group>"; };
+		73CD1B09AD631743BA9DA767 /* Pods-Instrums.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instrums.release.xcconfig"; path = "Target Support Files/Pods-Instrums/Pods-Instrums.release.xcconfig"; sourceTree = "<group>"; };
+		F3081CF127FA9D100015AFDE /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		F3081CF327FA9D360015AFDE /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		F3081CF527FA9DA90015AFDE /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		F3081CF827FAAD9B0015AFDE /* BalooBhai2-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BalooBhai2-Medium.ttf"; sourceTree = "<group>"; };
+		F3081CF927FAAD9B0015AFDE /* BalooBhai2-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BalooBhai2-Regular.ttf"; sourceTree = "<group>"; };
+		F3081CFA27FAAD9B0015AFDE /* BalooBhai2-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BalooBhai2-SemiBold.ttf"; sourceTree = "<group>"; };
+		F3081CFB27FAAD9B0015AFDE /* BalooBhai2-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BalooBhai2-ExtraBold.ttf"; sourceTree = "<group>"; };
+		F3081CFC27FAAD9B0015AFDE /* BalooBhai2-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BalooBhai2-Bold.ttf"; sourceTree = "<group>"; };
+		F3081D0327FAB2E10015AFDE /* MainNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNode.swift; sourceTree = "<group>"; };
 		F30E1B6F263E6E7B009F358D /* Congratulations.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Congratulations.storyboard; sourceTree = "<group>"; };
 		F30E1B72263E6ECC009F358D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Instrums/View/Base.lproj/Quiz.storyboard; sourceTree = "<group>"; };
 		F30E1B74263E6F54009F358D /* HowToPlay.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HowToPlay.storyboard; sourceTree = "<group>"; };
@@ -88,6 +109,7 @@
 		F3B26A73263D0E0B003EC362 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		F3B26A75263D228B003EC362 /* Instruments+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Instruments+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F3B26A76263D228B003EC362 /* Instruments+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Instruments+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FFCDCA6206AE4E96B9753881 /* Pods_Instrums.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instrums.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,17 +117,176 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F1374948850402506388F88 /* Pods_Instrums.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5870E9CACD7B7CC2E3DF9288 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5686CAB636B90405AAEFB696 /* Pods-Instrums.debug.xcconfig */,
+				73CD1B09AD631743BA9DA767 /* Pods-Instrums.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		706B68A67889EF16E3928FCA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFCDCA6206AE4E96B9753881 /* Pods_Instrums.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3081CE427FA9BE30015AFDE /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				F3081CED27FA9C870015AFDE /* Main */,
+				F3081CEE27FA9C940015AFDE /* Quiz */,
+				F3081CEF27FA9CA60015AFDE /* HowToPlay */,
+				F3081CF027FA9CC10015AFDE /* Congratulations */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		F3081CE527FA9BE80015AFDE /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F3081CEB27FA9C320015AFDE /* Coordinator */,
+				F3081CEA27FA9C250015AFDE /* Repository */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		F3081CE627FA9BF00015AFDE /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				F3081CE727FA9BF80015AFDE /* UI */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
+		F3081CE727FA9BF80015AFDE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F3081D0227FAB2D50015AFDE /* MainNode */,
+				F3081CE827FA9C010015AFDE /* StepCell */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F3081CE827FA9C010015AFDE /* StepCell */ = {
+			isa = PBXGroup;
+			children = (
+				F3B26A62263CEEDA003EC362 /* StepCell.swift */,
+				F3B26A63263CEEDA003EC362 /* StepCell.xib */,
+			);
+			path = StepCell;
+			sourceTree = "<group>";
+		};
+		F3081CE927FA9C090015AFDE /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				F390E917263951A3002659B8 /* Colors.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		F3081CEA27FA9C250015AFDE /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F3B26A73263D0E0B003EC362 /* Repository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		F3081CEB27FA9C320015AFDE /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				F3081CF327FA9D360015AFDE /* Coordinator.swift */,
+				F3081CF527FA9DA90015AFDE /* Storyboarded.swift */,
+				F3081CF127FA9D100015AFDE /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		F3081CEC27FA9C6C0015AFDE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F3081CF727FAAD680015AFDE /* Fonts */,
+				F3081CE927FA9C090015AFDE /* Colors */,
+				F3449DF8263BD0E400C725EA /* Sounds */,
+				F318E38726382A8400202F47 /* Assets.xcassets */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F3081CED27FA9C870015AFDE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F318E38226382A8300202F47 /* ViewController.swift */,
+				F318E38426382A8300202F47 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F3081CEE27FA9C940015AFDE /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				F390E91926395BED002659B8 /* QuizViewController.swift */,
+				F30E1B71263E6ECC009F358D /* Quiz.storyboard */,
+			);
+			path = Quiz;
+			sourceTree = "<group>";
+		};
+		F3081CEF27FA9CA60015AFDE /* HowToPlay */ = {
+			isa = PBXGroup;
+			children = (
+				F34A62AC263AB4AE00ED7486 /* HowToPlayViewController.swift */,
+				F30E1B74263E6F54009F358D /* HowToPlay.storyboard */,
+			);
+			path = HowToPlay;
+			sourceTree = "<group>";
+		};
+		F3081CF027FA9CC10015AFDE /* Congratulations */ = {
+			isa = PBXGroup;
+			children = (
+				F34A62AA263AA81500ED7486 /* CongratulationsViewController.swift */,
+				F30E1B6F263E6E7B009F358D /* Congratulations.storyboard */,
+			);
+			path = Congratulations;
+			sourceTree = "<group>";
+		};
+		F3081CF727FAAD680015AFDE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F3081CFC27FAAD9B0015AFDE /* BalooBhai2-Bold.ttf */,
+				F3081CFB27FAAD9B0015AFDE /* BalooBhai2-ExtraBold.ttf */,
+				F3081CF827FAAD9B0015AFDE /* BalooBhai2-Medium.ttf */,
+				F3081CF927FAAD9B0015AFDE /* BalooBhai2-Regular.ttf */,
+				F3081CFA27FAAD9B0015AFDE /* BalooBhai2-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F3081D0227FAB2D50015AFDE /* MainNode */ = {
+			isa = PBXGroup;
+			children = (
+				F3081D0327FAB2E10015AFDE /* MainNode.swift */,
+			);
+			path = MainNode;
+			sourceTree = "<group>";
+		};
 		F318E37226382A8300202F47 = {
 			isa = PBXGroup;
 			children = (
 				F318E37D26382A8300202F47 /* Instrums */,
 				F318E37C26382A8300202F47 /* Products */,
+				5870E9CACD7B7CC2E3DF9288 /* Pods */,
+				706B68A67889EF16E3928FCA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,14 +301,13 @@
 		F318E37D26382A8300202F47 /* Instrums */ = {
 			isa = PBXGroup;
 			children = (
-				F3B26A61263CEEBC003EC362 /* Custom */,
+				F3081CE427FA9BE30015AFDE /* Pages */,
+				F3081CE527FA9BE80015AFDE /* Helper */,
+				F3081CE627FA9BF00015AFDE /* Themes */,
 				F390E914263950A4002659B8 /* Model */,
-				F390E915263950B0002659B8 /* View */,
-				F390E916263950BB002659B8 /* Controller */,
-				F3449DF8263BD0E400C725EA /* Sounds */,
+				F3081CEC27FA9C6C0015AFDE /* Utilities */,
 				F318E37E26382A8300202F47 /* AppDelegate.swift */,
 				F318E38026382A8300202F47 /* SceneDelegate.swift */,
-				F318E38726382A8400202F47 /* Assets.xcassets */,
 				F318E38926382A8400202F47 /* LaunchScreen.storyboard */,
 				F318E38C26382A8400202F47 /* Info.plist */,
 				F3B26A66263D04F1003EC362 /* Instrums.xcdatamodeld */,
@@ -166,41 +346,8 @@
 			children = (
 				F3B26A75263D228B003EC362 /* Instruments+CoreDataClass.swift */,
 				F3B26A76263D228B003EC362 /* Instruments+CoreDataProperties.swift */,
-				F3B26A73263D0E0B003EC362 /* Repository.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		F390E915263950B0002659B8 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				F318E38426382A8300202F47 /* Main.storyboard */,
-				F30E1B71263E6ECC009F358D /* Quiz.storyboard */,
-				F30E1B74263E6F54009F358D /* HowToPlay.storyboard */,
-				F30E1B6F263E6E7B009F358D /* Congratulations.storyboard */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		F390E916263950BB002659B8 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				F318E38226382A8300202F47 /* ViewController.swift */,
-				F390E91926395BED002659B8 /* QuizViewController.swift */,
-				F34A62AC263AB4AE00ED7486 /* HowToPlayViewController.swift */,
-				F34A62AA263AA81500ED7486 /* CongratulationsViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		F3B26A61263CEEBC003EC362 /* Custom */ = {
-			isa = PBXGroup;
-			children = (
-				F390E917263951A3002659B8 /* Colors.swift */,
-				F3B26A62263CEEDA003EC362 /* StepCell.swift */,
-				F3B26A63263CEEDA003EC362 /* StepCell.xib */,
-			);
-			path = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,9 +357,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F318E38F26382A8400202F47 /* Build configuration list for PBXNativeTarget "Instrums" */;
 			buildPhases = (
+				2D626A67612B39FD323DEDBB /* [CP] Check Pods Manifest.lock */,
 				F318E37726382A8300202F47 /* Sources */,
 				F318E37826382A8300202F47 /* Frameworks */,
 				F318E37926382A8300202F47 /* Resources */,
+				393B55C242B7F46415BE738C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -263,17 +412,22 @@
 				F3449E0D263BD0E400C725EA /* Trumpet.mp3 in Resources */,
 				F3449E0C263BD0E400C725EA /* Fork.mp3 in Resources */,
 				F37465122640F2F9007D543B /* Congratulations.mp3 in Resources */,
+				F3081CFF27FAAD9B0015AFDE /* BalooBhai2-SemiBold.ttf in Resources */,
 				F30E1B73263E6ECC009F358D /* Quiz.storyboard in Resources */,
 				F30E1B70263E6E7B009F358D /* Congratulations.storyboard in Resources */,
 				F3449E0E263BD0E400C725EA /* Saxophone.mp3 in Resources */,
 				F3449E11263BD0E400C725EA /* Bass.mp3 in Resources */,
 				F3449E13263BD0E400C725EA /* Accordion.mp3 in Resources */,
+				F3081CFE27FAAD9B0015AFDE /* BalooBhai2-Regular.ttf in Resources */,
 				F3449E0F263BD0E400C725EA /* Cowbell.mp3 in Resources */,
+				F3081D0027FAAD9B0015AFDE /* BalooBhai2-ExtraBold.ttf in Resources */,
 				F31F2E1B264249DF006F08A1 /* Keyboard.mp3 in Resources */,
 				F3449E14263BD0E400C725EA /* Panpipe.mp3 in Resources */,
+				F3081D0127FAAD9B0015AFDE /* BalooBhai2-Bold.ttf in Resources */,
 				F3B26A65263CEEDA003EC362 /* StepCell.xib in Resources */,
 				F3449E08263BD0E400C725EA /* Guitar.mp3 in Resources */,
 				F3449E15263BD0E400C725EA /* Violin.mp3 in Resources */,
+				F3081CFD27FAAD9B0015AFDE /* BalooBhai2-Medium.ttf in Resources */,
 				F3449E12263BD0E400C725EA /* Drum.mp3 in Resources */,
 				F3449E0A263BD0E400C725EA /* Banjo.mp3 in Resources */,
 				F318E38B26382A8400202F47 /* LaunchScreen.storyboard in Resources */,
@@ -291,6 +445,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2D626A67612B39FD323DEDBB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Instrums-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		393B55C242B7F46415BE738C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Instrums/Pods-Instrums-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Instrums/Pods-Instrums-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Instrums/Pods-Instrums-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F318E37726382A8300202F47 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -298,14 +494,18 @@
 			files = (
 				F3B26A68263D04F2003EC362 /* Instrums.xcdatamodeld in Sources */,
 				F318E38326382A8300202F47 /* ViewController.swift in Sources */,
+				F3081CF627FA9DA90015AFDE /* Storyboarded.swift in Sources */,
 				F34A62AB263AA81500ED7486 /* CongratulationsViewController.swift in Sources */,
+				F3081D0427FAB2E10015AFDE /* MainNode.swift in Sources */,
 				F390E91A26395BED002659B8 /* QuizViewController.swift in Sources */,
 				F3B26A78263D228B003EC362 /* Instruments+CoreDataProperties.swift in Sources */,
 				F34A62AD263AB4AE00ED7486 /* HowToPlayViewController.swift in Sources */,
+				F3081CF427FA9D360015AFDE /* Coordinator.swift in Sources */,
 				F3B26A74263D0E0B003EC362 /* Repository.swift in Sources */,
 				F390E918263951A3002659B8 /* Colors.swift in Sources */,
 				F3B26A64263CEEDA003EC362 /* StepCell.swift in Sources */,
 				F318E37F26382A8300202F47 /* AppDelegate.swift in Sources */,
+				F3081CF227FA9D100015AFDE /* MainCoordinator.swift in Sources */,
 				F318E38126382A8300202F47 /* SceneDelegate.swift in Sources */,
 				F3B26A77263D228B003EC362 /* Instruments+CoreDataClass.swift in Sources */,
 			);
@@ -459,6 +659,7 @@
 		};
 		F318E39026382A8400202F47 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5686CAB636B90405AAEFB696 /* Pods-Instrums.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -480,6 +681,7 @@
 		};
 		F318E39126382A8400202F47 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73CD1B09AD631743BA9DA767 /* Pods-Instrums.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
