@@ -5,7 +5,6 @@
 //  Created by Stefan Adisurya on 27/04/21.
 //
 
-import UIKit
 import AVFoundation
 import AsyncDisplayKit
 
@@ -14,7 +13,6 @@ class ViewController: ASDKViewController<ASDisplayNode> {
     
     var song: AVAudioPlayer?
     var currentSong: String = ""
-    weak var coordinator: MainCoordinator?
     
     private let rootNode: ASDisplayNode = {
         let rootNode = ASDisplayNode()
@@ -49,14 +47,15 @@ class ViewController: ASDKViewController<ASDisplayNode> {
 }
 
 /* Functionality */
-extension ViewController: AVAudioPlayerDelegate, Storyboarded {
+extension ViewController: AVAudioPlayerDelegate {
     
     @objc func startQuiz(_ sender: UITapGestureRecognizer? = nil) {
         stopInstrument()
         
-        let vc = CongratulationsViewController(nibName: String(describing: CongratulationsViewController.self), bundle: nil)
-//        pushViewController(vc, animated: true)
+        let vc = GameViewController()
+        vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true)
+//        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func playInstrument() {

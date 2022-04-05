@@ -9,12 +9,10 @@ import UIKit
 import AVFoundation
 import CoreData
 
-class QuizViewController: UIViewController, Storyboarded {
+class QuizViewController: UIViewController {
     
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var instrumentButton: UIButton!
-    
-    weak var coordinator: MainCoordinator?
     
     var instrumentNames = [String]()
     var instrumentFacts = [String]()

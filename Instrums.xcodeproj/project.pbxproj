@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3F1374948850402506388F88 /* Pods_Instrums.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCDCA6206AE4E96B9753881 /* Pods_Instrums.framework */; };
-		F3081CF227FA9D100015AFDE /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3081CF127FA9D100015AFDE /* MainCoordinator.swift */; };
-		F3081CF427FA9D360015AFDE /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3081CF327FA9D360015AFDE /* Coordinator.swift */; };
-		F3081CF627FA9DA90015AFDE /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3081CF527FA9DA90015AFDE /* Storyboarded.swift */; };
 		F3081CFD27FAAD9B0015AFDE /* BalooBhai2-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3081CF827FAAD9B0015AFDE /* BalooBhai2-Medium.ttf */; };
 		F3081CFE27FAAD9B0015AFDE /* BalooBhai2-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3081CF927FAAD9B0015AFDE /* BalooBhai2-Regular.ttf */; };
 		F3081CFF27FAAD9B0015AFDE /* BalooBhai2-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3081CFA27FAAD9B0015AFDE /* BalooBhai2-SemiBold.ttf */; };
@@ -43,6 +40,11 @@
 		F3449E15263BD0E400C725EA /* Violin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3449E06263BD0E400C725EA /* Violin.mp3 */; };
 		F34A62AB263AA81500ED7486 /* CongratulationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A62AA263AA81500ED7486 /* CongratulationsViewController.swift */; };
 		F34A62AD263AB4AE00ED7486 /* HowToPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A62AC263AB4AE00ED7486 /* HowToPlayViewController.swift */; };
+		F3580DC727FC0CF900CB5ED9 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3580DC627FC0CF900CB5ED9 /* TestViewController.swift */; };
+		F3580DC927FC0D0600CB5ED9 /* TestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3580DC827FC0D0600CB5ED9 /* TestView.xib */; };
+		F3580DCD27FC138200CB5ED9 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3580DCB27FC138200CB5ED9 /* GameViewController.swift */; };
+		F3580DCE27FC138200CB5ED9 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3580DCC27FC138200CB5ED9 /* GameViewController.xib */; };
+		F3580DD227FC147900CB5ED9 /* GameHeaderNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3580DD127FC147900CB5ED9 /* GameHeaderNode.swift */; };
 		F374650A2640E806007D543B /* Background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F37465092640E806007D543B /* Background.mp3 */; };
 		F374650C2640E812007D543B /* Correct.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F374650B2640E812007D543B /* Correct.mp3 */; };
 		F374650E2640E81D007D543B /* Wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F374650D2640E81D007D543B /* Wrong.mp3 */; };
@@ -60,9 +62,6 @@
 /* Begin PBXFileReference section */
 		5686CAB636B90405AAEFB696 /* Pods-Instrums.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instrums.debug.xcconfig"; path = "Target Support Files/Pods-Instrums/Pods-Instrums.debug.xcconfig"; sourceTree = "<group>"; };
 		73CD1B09AD631743BA9DA767 /* Pods-Instrums.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instrums.release.xcconfig"; path = "Target Support Files/Pods-Instrums/Pods-Instrums.release.xcconfig"; sourceTree = "<group>"; };
-		F3081CF127FA9D100015AFDE /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
-		F3081CF327FA9D360015AFDE /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		F3081CF527FA9DA90015AFDE /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		F3081CF827FAAD9B0015AFDE /* BalooBhai2-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BalooBhai2-Medium.ttf"; sourceTree = "<group>"; };
 		F3081CF927FAAD9B0015AFDE /* BalooBhai2-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BalooBhai2-Regular.ttf"; sourceTree = "<group>"; };
 		F3081CFA27FAAD9B0015AFDE /* BalooBhai2-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BalooBhai2-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -97,6 +96,11 @@
 		F3449E06263BD0E400C725EA /* Violin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Violin.mp3; sourceTree = "<group>"; };
 		F34A62AA263AA81500ED7486 /* CongratulationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationsViewController.swift; sourceTree = "<group>"; };
 		F34A62AC263AB4AE00ED7486 /* HowToPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayViewController.swift; sourceTree = "<group>"; };
+		F3580DC627FC0CF900CB5ED9 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		F3580DC827FC0D0600CB5ED9 /* TestView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestView.xib; sourceTree = "<group>"; };
+		F3580DCB27FC138200CB5ED9 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		F3580DCC27FC138200CB5ED9 /* GameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
+		F3580DD127FC147900CB5ED9 /* GameHeaderNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHeaderNode.swift; sourceTree = "<group>"; };
 		F37465092640E806007D543B /* Background.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Background.mp3; sourceTree = "<group>"; };
 		F374650B2640E812007D543B /* Correct.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Correct.mp3; sourceTree = "<group>"; };
 		F374650D2640E81D007D543B /* Wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Wrong.mp3; sourceTree = "<group>"; };
@@ -145,9 +149,12 @@
 			isa = PBXGroup;
 			children = (
 				F3081CED27FA9C870015AFDE /* Main */,
+				F3580DCA27FC136700CB5ED9 /* Game */,
 				F3081CEE27FA9C940015AFDE /* Quiz */,
 				F3081CEF27FA9CA60015AFDE /* HowToPlay */,
 				F3081CF027FA9CC10015AFDE /* Congratulations */,
+				F3580DC627FC0CF900CB5ED9 /* TestViewController.swift */,
+				F3580DC827FC0D0600CB5ED9 /* TestView.xib */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -155,7 +162,6 @@
 		F3081CE527FA9BE80015AFDE /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				F3081CEB27FA9C320015AFDE /* Coordinator */,
 				F3081CEA27FA9C250015AFDE /* Repository */,
 			);
 			path = Helper;
@@ -173,6 +179,8 @@
 			isa = PBXGroup;
 			children = (
 				F3081D0227FAB2D50015AFDE /* MainNode */,
+				F3580DCF27FC145200CB5ED9 /* GameHeaderNode */,
+				F3580DD027FC145C00CB5ED9 /* GameContentNode */,
 				F3081CE827FA9C010015AFDE /* StepCell */,
 			);
 			path = UI;
@@ -201,16 +209,6 @@
 				F3B26A73263D0E0B003EC362 /* Repository.swift */,
 			);
 			path = Repository;
-			sourceTree = "<group>";
-		};
-		F3081CEB27FA9C320015AFDE /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				F3081CF327FA9D360015AFDE /* Coordinator.swift */,
-				F3081CF527FA9DA90015AFDE /* Storyboarded.swift */,
-				F3081CF127FA9D100015AFDE /* MainCoordinator.swift */,
-			);
-			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		F3081CEC27FA9C6C0015AFDE /* Utilities */ = {
@@ -341,6 +339,30 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
+		F3580DCA27FC136700CB5ED9 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				F3580DCB27FC138200CB5ED9 /* GameViewController.swift */,
+				F3580DCC27FC138200CB5ED9 /* GameViewController.xib */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		F3580DCF27FC145200CB5ED9 /* GameHeaderNode */ = {
+			isa = PBXGroup;
+			children = (
+				F3580DD127FC147900CB5ED9 /* GameHeaderNode.swift */,
+			);
+			path = GameHeaderNode;
+			sourceTree = "<group>";
+		};
+		F3580DD027FC145C00CB5ED9 /* GameContentNode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GameContentNode;
+			sourceTree = "<group>";
+		};
 		F390E914263950A4002659B8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -414,6 +436,7 @@
 				F37465122640F2F9007D543B /* Congratulations.mp3 in Resources */,
 				F3081CFF27FAAD9B0015AFDE /* BalooBhai2-SemiBold.ttf in Resources */,
 				F30E1B73263E6ECC009F358D /* Quiz.storyboard in Resources */,
+				F3580DCE27FC138200CB5ED9 /* GameViewController.xib in Resources */,
 				F30E1B70263E6E7B009F358D /* Congratulations.storyboard in Resources */,
 				F3449E0E263BD0E400C725EA /* Saxophone.mp3 in Resources */,
 				F3449E11263BD0E400C725EA /* Bass.mp3 in Resources */,
@@ -433,6 +456,7 @@
 				F318E38B26382A8400202F47 /* LaunchScreen.storyboard in Resources */,
 				F30E1B75263E6F54009F358D /* HowToPlay.storyboard in Resources */,
 				F374650E2640E81D007D543B /* Wrong.mp3 in Resources */,
+				F3580DC927FC0D0600CB5ED9 /* TestView.xib in Resources */,
 				F3449E10263BD0E400C725EA /* Bongo.mp3 in Resources */,
 				F374650A2640E806007D543B /* Background.mp3 in Resources */,
 				F374650C2640E812007D543B /* Correct.mp3 in Resources */,
@@ -494,18 +518,18 @@
 			files = (
 				F3B26A68263D04F2003EC362 /* Instrums.xcdatamodeld in Sources */,
 				F318E38326382A8300202F47 /* ViewController.swift in Sources */,
-				F3081CF627FA9DA90015AFDE /* Storyboarded.swift in Sources */,
+				F3580DC727FC0CF900CB5ED9 /* TestViewController.swift in Sources */,
 				F34A62AB263AA81500ED7486 /* CongratulationsViewController.swift in Sources */,
 				F3081D0427FAB2E10015AFDE /* MainNode.swift in Sources */,
 				F390E91A26395BED002659B8 /* QuizViewController.swift in Sources */,
 				F3B26A78263D228B003EC362 /* Instruments+CoreDataProperties.swift in Sources */,
 				F34A62AD263AB4AE00ED7486 /* HowToPlayViewController.swift in Sources */,
-				F3081CF427FA9D360015AFDE /* Coordinator.swift in Sources */,
+				F3580DD227FC147900CB5ED9 /* GameHeaderNode.swift in Sources */,
 				F3B26A74263D0E0B003EC362 /* Repository.swift in Sources */,
 				F390E918263951A3002659B8 /* Colors.swift in Sources */,
+				F3580DCD27FC138200CB5ED9 /* GameViewController.swift in Sources */,
 				F3B26A64263CEEDA003EC362 /* StepCell.swift in Sources */,
 				F318E37F26382A8300202F47 /* AppDelegate.swift in Sources */,
-				F3081CF227FA9D100015AFDE /* MainCoordinator.swift in Sources */,
 				F318E38126382A8300202F47 /* SceneDelegate.swift in Sources */,
 				F3B26A77263D228B003EC362 /* Instruments+CoreDataClass.swift in Sources */,
 			);
